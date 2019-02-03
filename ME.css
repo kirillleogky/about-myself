@@ -1,0 +1,16 @@
+body {
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
+  color: #777777;
+}
+.page-head {
+width:1000px;
+height: 768px;
+}
+.page-head img {
+border-radius: 90px;
+margin-top: 124px;
+margin-left: 330px;
+max-width: 340px;
+max-height: 340px;
+}
