@@ -1,16 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+/* font-family: 'PT Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+/* font-family: 'PT Mono', monospace; */
 body {
   font-size: 14px;
   font-family: "PT Sans", sans-serif;
   color: #777777;
+  min-width: 710px;
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
+/* Fonts */
+h1,
+h2,
+.btn-1,
+.btn-2,
+dt {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+i,
+input.name,
+input.post,
+.form .message,
+.sign{
+  font-style: normal;
+  font-family: 'PT Sans', sans-serif;
+}
+.form .name,
+.form .post,
+.form .message {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+p,
+dd,
+.examples-of-work a{
+  font-family: 'PT Mono', monospace;
+}
+.very-important-text {
+  font-size: 40px;
+}
+.page-head p,
+.page-thoughts dd,
+.examples-of-work p,
+.examples-of-work a,
+.examples-of-work i,
+.suggestion p {
+  font-size: 14px;
+}
+.btn-1,
+.definitions dt,
+h2,
+.btn-2 {
+font-size: 18px;
+}
+.sign-of-plus,
+.form .name,
+.form .post,
+.form .label-file,
+.form .message {
+  font-size: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+   width: 700px;
+   margin: 0 auto;
+}
+/* Head */
 .page-head {
-width:1000px;
-height: 768px;
+  background-color: #EFF1F2;
 }
 .page-head img {
-border-radius: 90px;
-margin-top: 124px;
-margin-left: 330px;
-max-width: 340px;
-max-height: 340px;
+  border-radius: 100%;
+  margin:124px 180px 36px 180px;
+  width:340px;
+  height:340px;
+  text-align: center;
+}
+.important-text {
+  text-align: center;
+  font-size: 32px;
+}
+p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+}
+.button {
+  text-align: center;
+}
+.btn-1 {
+  background-color: #0059D9;
+  border-radius: 4px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 124px;
+  padding: 14px 89.5px;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  text-align: center;
+}
+.btn-1:hover {
+  background: #000000;
+}
+.btn-1:active {
+  opacity: 0.7;
+  background: #0059D9;
+}
+/* Page-thoughts */
+.page-thoughts {
+  max-height: 500px;
+}
+.page-thoughts .important-text {
+  text-align: left;
+  margin-top: 100px;
+}
+.page-thoughts dl {
+  padding-bottom: 100px;
+}
+.page-thoughts dt {
+  padding: 0px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin: 0px;
+  border-top: 1px solid #D2D9E2;
+  color: #0059D9;
+}
+.page-thoughts dd {
+  padding: 0px;
+  margin: 0px;
+  opacity: 0.7;
+  height: 10px;
+  opacity: 0;
+}
+.sign-of-plus {
+margin: 0px;
+padding: 0px;
+color: #0059D9;
+float: right;
+margin-top: -35px;
+}
+dt:hover {
+  color: #000000;
+}
+dt:hover + .sign-of-plus{
+  transition-duration: 1s;
+  transform: rotate(45deg);
+  color: #000000;
+}
+.definitions:hover + dd {
+  transition-duration: 2s;
+  height: 100%;
+  opacity: 1;
+  padding-bottom: 14px;
+}
+/* Page-examples-of-work */
+.examples-of-work {
+  background: #25282A;
+}
+.examples-of-work h1,
+.examples-of-work p,
+.examples-of-work h2 {
+ text-align: center;
+ color: #FFFFFF;
+}
+.examples-of-work h1 {
+  padding: 0;
+  margin: 0;
+  padding-top: 100px;
+}
+.examples-of-work p {
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 80px;
+  margin: 0;
+  opacity: 0.7;
+}
+.examples-of-work h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+}
+.links {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  height: 20px;
+  width: 700px;
+  color: #71ABFF;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.links:hover {
+  color: #FFFFFF;
+}
+.links:active {
+  opacity: 0.7;
+  color: #71ABFF;
+}
+.examples-of-work img {
+  width: 700px;
+  height: 500px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08), 0 7px 22px 0 rgba(0,0,0,0.12);
+  border-radius: 8px;
+}
+.examples-of-work i {
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  display: block;
+  width: 520px;
+  padding-top:20px;
+  padding-bottom: 80px;
+}
+
+/* Page-contact */
+.page-contact-info {
+  background-color: #EFF1F2;
+}
+.page-contact-info h1 {
+  text-align: center;
+  padding: 0;
+  margin:0;
+  padding-top: 100px;
+}
+.social {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+}
+.button-fb {
+  background: #395A99;
+  border-radius: 50px;
+  background-position: 4px 4px;
+}
+.button-tw {
+  background: #51ADEF;
+  border-radius: 50px;
+  background-position: 6px -71px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.button-tj {
+  background: #2CA5E0;
+  border-radius: 50px;
+  background-position: 3px -33px;
+}
+.social-button {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    color: #ffffff;
+    background-image: url("images/sprite.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+.suggestion p {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  color: #000000;
+}
+.form {
+  margin-top: 40px;
+}
+.form .name,
+.form .post {
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(31,64,111,0.20);
+  border-radius: 4px;
+  width: 256px;
+  vertical-align: middle;
+  height: 36px;
+  width: 326px;
+  padding-left: 12px;
+  background-color: #FFFFFF;
+}
+.form .name {
+  float: left;
+}
+.form .post {
+  margin-left: 20px;
+  float:right;
+}
+.form .message {
+  padding: 0;
+  margin: 0;
+  width: 686px;
+  height: 130px;
+  margin-top: 20px;
+  resize: none;
+  border: 1px solid rgba(31,64,111,0.20);
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-left: 12px;
+  background-color: #FFFFFF;
+}
+.form .name:hover,
+.form .post:hover,
+.form .message:hover {
+  border-color: #0059D9;
+}
+.form .name:focus,
+.form .post:focus,
+.form .message:focus {
+  border-color: #0059D9;
+  color: black;
+}
+
+
+.inputfile {
+  padding: 0;
+  margin: 0;
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+}
+.sign {
+padding: 0;
+margin: 0;
+width: 699px;
+height: 20px;
+border: 1px solid rgba(31,64,111,0.20);
+border-radius: 4px;
+color: #0059D9;
+text-align: center;
+padding-top: 6px;
+padding-bottom: 5px;
+}
+.sign:hover {
+  color: black;
+}
+.sign:active {
+  color: #0059D9;
+  opacity: 0.7;
+  content: "Загрузить другой файл";
+}
+.sign:visited {
+  content: "Загрузить другой файл";
+  color: #0059D9;
+}
+.btn-2 {
+  background-color: #0059D9;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  display: inline-block;
+  width: 701px;
+  height: 52px;
+  margin: 20px 0 124px 0;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  text-align: center;
+
+}
+.btn-2:hover {
+  background: #000000;
+}
+.btn-2:active {
+  opacity: 0.7;
+  background: #0059D9;
 }
